@@ -1,16 +1,16 @@
 <template>
   <div>
-    <FlowerCard v-for="flower in flowers" 
-    :key="flower.name"
-    :flower="flower"
-    @click="addToCart(flower)"
+    <DestCard v-for="destination in destinations" 
+    :key="destination.name"
+    :Destination="destination"
+    @click="addToCart(destination)"
     />
   </div>
   </template>
   
   <script setup>
-  import FlowerCard from '@/components/icons/FlowerCard.vue';
-  const flowers = [
+  import DestCard from '@/components/icons/DestCard.vue';
+  const destinations = [
           {
             name: "Baby's Breath",
             International: true,
