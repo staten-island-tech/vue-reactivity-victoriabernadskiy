@@ -3,7 +3,7 @@
         <h1>{{ Destination.name }}</h1>
         <img :src="Destination.img" alt="">
         <h2>{{ Destination.price }}</h2>
-        <button @click="increment">Add to Cart</button>
+        <button @click="$emit('poop')">Add to Cart</button>
     </div>
 </template>
 
@@ -12,6 +12,9 @@ import {ref} from "vue";
 const props = defineProps({
     Destination: Object,
 });
+const emit = defineEmits([
+"poop"
+])
 //clicker logic
 const clicked = ref(0);
 function increment(){
