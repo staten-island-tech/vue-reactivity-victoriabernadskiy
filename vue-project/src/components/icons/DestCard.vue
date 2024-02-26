@@ -5,6 +5,9 @@
         <h2>{{ Destination.price }}</h2>
         <button @click="$emit('poop')">Add to Cart</button>
     </div>
+    <div>
+        <h1></h1>
+    </div>
 </template>
 
 <script setup>
@@ -17,9 +20,7 @@ const emit = defineEmits([
 ])
 //clicker logic
 const clicked = ref(0);
-function increment(){
-clicked.value++
-} 
+
 
 </script>
 
