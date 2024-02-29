@@ -10,6 +10,8 @@
   
   <script setup>
   import DestCard from '@/components/icons/DestCard.vue';
+  import MyCart from '@/views/MyCart.vue'
+  <MyCart v-if= "length > 0" />
   const destinations = [
   {
     "name": "Baby's Breath",
