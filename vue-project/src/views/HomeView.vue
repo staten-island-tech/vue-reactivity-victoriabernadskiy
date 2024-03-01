@@ -71,7 +71,7 @@
   }
 ]
 
-var cart = []
+let cart = []
 
 function addToCart(flower){
   cart.push(flower)
