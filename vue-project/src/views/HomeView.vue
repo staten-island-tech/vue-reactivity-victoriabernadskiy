@@ -7,11 +7,15 @@
     />
   </div>
   </template>
-  
+  <MyCart v-show="cart.length > 0"/>
+  <div> 
+  </div>
+
   <script setup>
   import DestCard from '@/components/icons/DestCard.vue';
-  import MyCart from '@/views/MyCart.vue'
-  <MyCart v-if= "length > 0" />
+  import MyCart from '@/src/components/MyCart.vue';
+  import { ref } from 'vue'
+  
   const destinations = [
   {
     "name": "Baby's Breath",
@@ -71,7 +75,7 @@
   }
 ]
 
-let cart = []
+let cart = ref([])
 
 function addToCart(flower){
   cart.push(flower)

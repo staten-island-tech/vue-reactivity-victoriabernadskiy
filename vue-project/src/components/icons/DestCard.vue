@@ -3,6 +3,7 @@
         <h1>{{ Destination.name }}</h1>
         <img :src="Destination.img" alt="">
         <h2>{{ Destination.price }}</h2>
+        <h2>{{ Destination.color }}</h2>
         <button @click="$emit('poop')">Add to Cart</button>
     </div>
     <div>
