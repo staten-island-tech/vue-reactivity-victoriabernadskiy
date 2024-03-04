@@ -17,7 +17,7 @@
   
   // Calculate total cost method
   const TotalCost = () => {
-    return props.cart.reduce((total, flower) => total + flower.price, 0)
+    return props.cart.reduce((total, flower) => total + flower.price)
   }
   </script>
   
