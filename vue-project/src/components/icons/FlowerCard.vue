@@ -52,6 +52,7 @@ img {
 #btn {
   background-color: white;
   border: 2px solid black;
+  border-radius: 3px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   transition: transform 0.2s, box-shadow 0.2s;
 }
@@ -60,6 +61,7 @@ img {
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
+
 
 
 </style>
