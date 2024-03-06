@@ -133,7 +133,7 @@ function addToCart(flower){
   gap: 20px;
   padding: 20px;
   background-color: #f9f9f9;
-  border: 3px solid #000000;
+  border: 1px solid #ddd;
   border-radius: 5px;
   position: fixed;
   right: 110px;
