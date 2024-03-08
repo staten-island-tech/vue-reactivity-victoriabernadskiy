@@ -1,5 +1,4 @@
 <template>
-  <h1 class="title">Vik's Flower Shop</h1>
   <div class="cards">
     <FlowerCard v-for="item in items" 
     :key="item.name"
@@ -140,7 +139,6 @@ function addToCart(flower){
   top: 30px;
   width: 300px;
   color: black;
-  font-family: 'Josefin Sans', sans-serif;
 }
 
 .cards{
@@ -150,15 +148,15 @@ function addToCart(flower){
   
 }
 
-.title {
-  position: relative;
-  top: 330px;
-  left: 1050px;
-  color: rgb(0, 0, 0);
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 50px;
-  text-shadow: 2px 2px 4px rgb(17, 78, 8), 0 0 2em rgb(105, 61, 10), 0 0 0.4em rgb(88, 229, 41);
+
+
+/* Checkout button */
+.checkout-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
-
-
   </style>
