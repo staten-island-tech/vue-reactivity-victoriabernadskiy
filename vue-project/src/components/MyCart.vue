@@ -5,7 +5,7 @@
         <h3>{{ flower.name }}</h3>
       </div>
       <div>
-        <h3 class="total"> Total = {{ TotalCost() }}</h3>
+        <h3 class="total"> Total = ${{ TotalCost() }}</h3>
       </div>
     </div>
   </template>
@@ -15,9 +15,9 @@
   
   const props = defineProps({ cart: Array })
   
-  // Calculate total cost method
+
   const TotalCost = () => {
-    return props.cart.reduce((total, flower) => total + flower.price)
+    return props.cart.reduce((total, flower) => total + flower.price, 0)
   }
   </script>
   
@@ -31,7 +31,6 @@
 
 .card {
   display: flex;
-  border: 3px solid #d23dc6;
   border-radius: 5px;
   margin-bottom: 10px;
 }
